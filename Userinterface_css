@@ -1,0 +1,53 @@
+#mainheader{
+    color: rgb(7, 0, 0);
+    text-align: center; 
+}
+
+.UIinterface{
+    color: white;
+    font-size: 150%;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);     
+    width: 100%;
+    text-align: center;
+}
+
+.UIbackground{
+    height: 620px;
+    /*width: 1580px;*/
+    width: 100%;
+    background-image:url("https://c1.wallpaperflare.com/preview/363/330/383/action-asia-asian-auto.jpg");
+    background-size:cover;
+    filter: blur(7px);
+    background-repeat: no-repeat;
+}
+
+.UItable{
+    align-self: centre;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1000px;
+    
+}
+
+.UIbutton{
+    border: none;
+    padding: 32px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.1s;
+    cursor: pointer;
+}
+
+
+
+.commonfooter{
+    text-align: center;
+}
