@@ -1,0 +1,61 @@
+/*this css is used for login screen,user resgister and forgot pass html*/
+
+.background{
+    height: 620px;
+    /*width: 1580px;*/
+    width: 100%;
+    background-image:url("https://c1.wallpaperflare.com/preview/363/330/383/action-asia-asian-auto.jpg");
+    background-size:cover;
+    filter: blur(7px);
+    background-repeat: no-repeat;
+}
+
+#mainheader{
+    color: rgb(7, 0, 0);
+    text-align: center; 
+
+}
+
+.logintext{
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);     /*transform moves the box in the centre*/
+  width: 100%;
+  text-align: center;
+}
+
+.textboxforgotpass{
+    translate: 20px 0;
+}
+
+.commonfooter{
+    text-align: center;
+}
+
+.interfacetext{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);     
+    width: 100%;
+    text-align: center;
+}
+
+.button{
+    border: none;
+    color: rgb(6, 0, 0);
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
