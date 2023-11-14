@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="common.css">
+    <title class="title">user register</title>
+    </head>
+  <body>
+    <header>
+      <h1 id="mainheader">RTO MANAGEMENT SYSTEM</h1>
+    </header>
+
+    <div class="background" ></div>
+    <div class="logintext">
+      <div>
+        <!--LOGIN DETAILS FOR USER AND ADMIN-->
+        <h3>CREATE NEW ID:</h3>
+        <form action="insert php"> <!--PHP REQUIRED!!! -->
+          <label for="LoginID ">Login ID </label>
+          <input type="text" ><br><br>
+          <label for="Password">Password </label>
+          <input type="text" ><br><br>
+          <input type="submit" value="Register" style="margin-bottom: 15px;">
+
+
+        </form>
+      </div>
+    </div>
+<!---->
+
+    <footer class="commonfooter">
+        <h3>THIS IS A FOOTER</h3>
+    </footer>
+
+  </body>
+</html>
