@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="userinterface.css">
+    <title class="title">user screen</title>
+    </head>
+  <body>
+    <header>
+      <h1 id="mainheader">RTO MANAGEMENT SYSTEM</h1>
+    </header>
+
+    <div class="UIbackground" ></div>
+    <div class="UIinterface">
+      <div>
+        <h2 style="margin-bottom: 70px;">Welcome User</h2>
+        <form action="insert php"> <!--PHP REQUIRED!!! --> 
+          <table class="UItable">
+            <tr>
+              <td><input type="submit" name="button1" value="1. Button-1" class="UIbutton"></td>
+              <td><input type="submit" name="button2" value="2. Button-2" class="UIbutton"></td>
+              <td><input type="submit" name="button3" value="3. Button-3" class="UIbutton"></td>
+              <td><input type="submit" name="button4" value="4. Button-4" class="UIbutton"></td>
+              <td><input type="submit" name="button5" value="5. Button-5" class="UIbutton"></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+    <footer class="commonfooter">
+      <h3>THIS IS A FOOTER</h3>
+    </footer>
+  </body>
+</html>
+
