@@ -19,7 +19,7 @@
           <input type="text" ><br><br>
           <label for="Password">Password </label>
           <input type="password" ></form><br>
-          <input type="submit" value="Submit" class="button">
+          <a href="main.html"><input type="submit" value="Submit" class="button"></a>
           <a href="forgot.html">
             <input type="submit" value="Forgot Password" class="button"></a>
          <a href="registration.html"> 
