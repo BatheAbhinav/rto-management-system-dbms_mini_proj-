@@ -19,10 +19,12 @@
     height: 620px;
     /*width: 1580px;*/
     width: 100%;
-    background-image:url("https://c1.wallpaperflare.com/preview/363/330/383/action-asia-asian-auto.jpg");
+    background-image:url("bus.jpg");
     background-size:cover;
     filter: blur(7px);
     background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .UItable{
@@ -51,3 +53,4 @@
 .commonfooter{
     text-align: center;
 }
+
