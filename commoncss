@@ -8,6 +8,10 @@
     background-size:cover;
     filter: blur(7px);
     background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+   
+    
 }
 
 #mainheader{
@@ -58,4 +62,3 @@
     cursor: pointer;
     
 }
-
