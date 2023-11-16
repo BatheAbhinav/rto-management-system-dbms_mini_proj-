@@ -1,0 +1,67 @@
+<?php //WORKING CODE!!
+session_start();
+include "dbconn.php";
+
+if(isset($_POST['Submit'])){
+    $LoginID = $_POST['LoginID'];
+    $Password = $_POST['Password'];
+
+    $query = "select LoginID,Password from user where LoginID='$LoginID' limit 1";
+    $result = mysqli_query($conn,$query);
+
+    if($result){
+        if($result && mysqli_num_rows($result)>0){
+            $userdata=mysqli_fetch_assoc($result);
+            if($userdata['Password'] === $Password){
+                header("Location: userscreen.html");
+                die;
+            }
+        }
+    }   
+}
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="common.css">
+    <title class="title">main login screen</title>
+    </head>
+
+  <body>
+
+    <header>
+      <h1 id="mainheader">RTO MANAGEMENT SYSTEM</h1>
+    </header>
+
+    <div class="background" ></div>
+    <div class="logintext">
+
+      <div>
+        <h3>ENTER LOGIN DETAILS:</h3>
+
+        <form method="post">
+
+          <label for="LoginID ">Login ID </label>
+          <input type="text" name="LoginID" ><br><br>
+          
+          <label for="Password">Password </label>
+          <input type="password" name="Password"><br><br>
+          
+          <input type="submit" value="Submit" class="button" name="Submit"></a>
+
+          <a href="forgotpass.html"><input type="button" value="Forgot Password" class="button"></a>
+    
+          <a href="userregister.php"><input type="button" value="Register"  style="margin-bottom: 15px;" class="button" ></a>
+          
+        </form>
+      </div>
+    </div>
+    <footer class="commonfooter">
+      <h3>THIS IS A FOOTER</h3>
+    </footer>
+  </body>
+</html>
