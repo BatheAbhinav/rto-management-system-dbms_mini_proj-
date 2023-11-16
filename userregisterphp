@@ -1,3 +1,17 @@
+<?php //WORKING CODE AAHE
+session_start();
+include "dbconn.php";
+
+if($_SERVER['REQUEST_METHOD'] == "POST"){
+    $LoginID = $_POST['LoginID'];
+    $Password = $_POST['Password'];
+    $query = "insert into user (loginid,password) values ('$LoginID','$Password')";
+    mysqli_query($conn,$query);
+    header("Location: screen1.html");
+    die;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,18 +29,19 @@
       <div>
         <!--LOGIN DETAILS FOR USER AND ADMIN-->
         <h3>CREATE NEW ID:</h3>
-        <form action="insert php"> <!--PHP REQUIRED!!! -->
+        <form method="post"> <!--PHP REQUIRED!!! -->
           <label for="LoginID ">Login ID </label>
-          <input type="text" ><br><br>
+          <input type="text" name="LoginID"><br><br>
+
           <label for="Password">Password </label>
-          <input type="text" ><br><br>
+          <input type="password" name="Password" ><br><br>
+
           <input type="submit" value="Register" style="margin-bottom: 15px;">
 
 
         </form>
       </div>
     </div>
-<!---->
 
     <footer class="commonfooter">
         <h3>THIS IS A FOOTER</h3>
