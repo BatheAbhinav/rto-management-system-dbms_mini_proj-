@@ -1,76 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="common.css">
+    <title class="title">user register</title>
+    </head>
+  <body>
+    <header>
+      <h1 id="mainheader">RTO MANAGEMENT SYSTEM</h1>
+    </header>
+
+    <div class="background" ></div>
+    <div class="logintext">
+      <div>
+        <!--LOGIN DETAILS FOR USER AND ADMIN-->
+        <h3>CREATE NEW ID:</h3>
+        <form method="post"> 
+
+          <label for="First name ">First name </label>
+          <input type="text" name="First name"><br><br>
+
+          <label for="Last Name">Last Name </label>
+          <input type="text" name="Last Name" ><br><br>
+
+          <label for="Address">First name </label>
+          <input type="text" name="Address"><br><br>
+
+          <label for="DOB ">DOB </label>
+          <input type="date" name="DOB"><br><br>
+
+          <label for="Aadhar No ">Aadhar No</label>
+          <input type="text" name="Aadhar No"><br><br>
+
+          <label for="Contact No">Contact No</label>
+          <input type="text" name="Contact No"><br><br>
+
+          <label for="Gender">Gender</label>
+          <select name="Gender" >
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select><br><br>
+
+          <input type="submit" value="Register" style="margin-bottom: 15px;">
 
 
-<head>
-<title>User Registration</title>
-<link rel="stylesheet" href="registration.css">
-</head>
+        </form>
+      </div>
+    </div>
 
+    <footer class="commonfooter">
+        <h3>THIS IS A FOOTER</h3>
+    </footer>
 
-
-<body>
-<h1>  <center>Registration</center></h1><hr>
-
-<form align="center"><b>
-   <div> <label id="p1">First Name:</label>
-    <input type="text" required name="Fname"></div>
-   
-   <br>
-    
-    
-<div><label id="p2">Last Name:</label>
-    <input type="text" required name="Lname"></div>
-    <br>
-    
-    
-<div> <label id="p3">Address:</label>
-    <input type="text" required name="Address"></div>
-    <br>
-    
-    
-<div><label id="p3">DOB:</label>
-        <input type="date" required name="DOB"></div>
-        <br>
-
-       
-
-    <div><label id="p4">Aadhar No:</label>
-            <input type="text" required name="AadharNo"></div>
-            <br>
-
-           
-        <div><label id="p5">Contact No:</label>
-                <input type="tel" required name="ContactNo"></div>
-                <br>
-                
-                
-            <div><label id="p6" for="Gender">Gender:</label>
-                    
-                    <label>Male</label>
-                    <input type="radio" name="Gender" value="Male">
-
-                    <label>Female</label>
-                        <input type="radio" name="Gender" value="Female"></div>
-                        <br>
-
-                        <div><label id="p4">LoginID:</label>
-                            <input type="text" required name="LoginID"></div>
-                            
-                            <br>
-
-                            <div><label id="p4">Password:</label>
-                                <input type="password" required name="Password"></div>
-                                <br>
-                        
-                        <div><input type="submit">
-                            <input type="reset"></div></b>
-
-                       
-</form>
-
-
-
-</body>
+  </body>
 </html>
-
